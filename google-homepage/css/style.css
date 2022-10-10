@@ -1,0 +1,257 @@
+/* Genel uygulamalar */
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+}
+html,
+body {
+  min-width: 400;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+/* 1.kısım */
+.item1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: 8px 15px 0 0;
+}
+
+.header {
+  list-style-type: none;
+  margin: 10px;
+  overflow: hidden;
+  margin-right: 16px;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+}
+
+.headerli a {
+  display: block;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
+.pic img {
+  border-radius: 40px;
+  border: 2px solid;
+  border-color: rgb(235, 35, 35, 0.8) rgb(39, 39, 233, 0.8)
+    rgb(54, 136, 54, 0.8) rgb(242, 242, 66, 0.8);
+}
+
+.headerli a:hover {
+  text-decoration: underline;
+}
+
+/* 2.kısım */
+
+.container {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.search-area {
+  background: #fff;
+  border-radius: 30px;
+  display: flex;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  z-index: 3;
+  height: 44px;
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 582px;
+}
+
+.search-area:hover {
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.search {
+  flex: 1;
+  display: flex;
+  padding: 5px 8px 0 16px;
+  padding-left: 14px;
+}
+
+.search-img {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+}
+
+.search-img span {
+  color: #9aa0a6;
+  height: 20px;
+  width: 20px;
+  margin-top: 0px;
+  display: inline-block;
+  fill: currentColor;
+  line-height: 24px;
+  position: relative;
+}
+
+.input-enter {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  border: none;
+}
+
+.input-area {
+  color: transparent;
+  flex: 100%;
+  white-space: pre;
+  font: 16px arial, sans-serif;
+  line-height: 34px;
+  height: 34px !important;
+  display: block;
+}
+
+.input {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.87);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  margin-top: -68px;
+  font: 16px arial, sans-serif;
+  line-height: 34px;
+  height: 34px !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  appearance: textfield;
+  cursor: text;
+  border: none;
+  width: 100%;
+}
+/* 4.kısım */
+.item4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.googlesearch {
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 4px;
+  color: #3c4043;
+  border: 1px solid #f8f9fa;
+  background-color: #f8f9fa;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  height: 36px;
+  min-width: 54px;
+}
+
+.feelinglucky {
+  padding: 0 16px;
+  line-height: 27px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 4px;
+  color: #3c4043;
+  border: 1px solid #f8f9fa;
+  background-color: #f8f9fa;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  height: 36px;
+}
+
+.googlesearch:hover,
+.feelinglucky:hover {
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+/* 5.kısım */
+.item5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  color: #4d5156;
+  font-size: 0.9rem;
+  line-height: 28px;
+}
+
+/* 6.kısım */
+.item6 {
+  flex-shrink: 0;
+  box-sizing: border-box;
+  background: #f2f2f2;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.country {
+  padding: 15px 30px;
+  border-bottom: 1px solid #dadce0;
+  font-size: 15px;
+  color: #70757a;
+}
+.footer {
+  overflow: hidden;
+  border: 1px solid #dfe1e5;
+  border-top: 1px solid #dadce0;
+  line-height: 10px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-right {
+  padding: 0 20px;
+}
+.footer-left a,
+.footer-right a {
+  display: block;
+  color: #70757a;
+  text-align: center;
+
+  text-decoration: none;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin-left: 14px;
+  margin-right: -20px;
+
+  padding: 15px;
+  white-space: nowrap;
+}
+
+.footer-left a:hover,
+.footer-right a:hover {
+  text-decoration: underline;
+}
